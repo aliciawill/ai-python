@@ -3,7 +3,7 @@ start2 = int(start)
 end2 = int(end)
 print(start2)
 print(end2)
-
+#[1,2,3,4,5]
 length = len(list(range(start2, end2 + 1)))
 print('개수는 ', length)
 

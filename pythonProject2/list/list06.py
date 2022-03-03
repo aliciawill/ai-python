@@ -1,5 +1,7 @@
-target = 55
+import random
 
+target = random.randint(1, 100)
+# print(target)
 cnt = 0
 while True:
     number = int(input('숫자를 입력>>'))
