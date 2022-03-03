@@ -47,15 +47,14 @@ print(len(id3.lstrip()))
 print(len(id3.rstrip()))
 print(len(id3.strip()))
 
-print(len(news.split(' ')))
-c = 0
 count = []
-for i in range(0, len(news.split(' '))):
-    print(news[i])
-    if(news[i] == '주꾸미'):
+i = 0
+while i > -1:
+    i = news.find('주꾸미', i)
+    if i > -1:
         count.append(i)
-        c += 1
-print(c)
+        i += len('주꾸미')
+print('주꾸미 위치>>', count)
 
 
 
@@ -78,7 +77,9 @@ count = 0
 ju_list = []
 for i in range(0, len(news2), 1):
     #print(news2[i])
-    if(news2[i] == '주꾸미'):
+    #if(news2[i] == '주꾸미'):
+    #if(news2[i].startswith('주꾸미')):
+    if(news2[i].endswith('주꾸미')):
         print('찾음.>> ', i)
         ju_list.append(i)
         count += 1 #count = count + 1
