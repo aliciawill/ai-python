@@ -8,8 +8,11 @@ while True:
         print(x, end='  ')
     print()
     print('-----------------------------')
-    print(seat)
-    print('-----------------------------')
+    # print(seat)
+    print(' ', end='')
+    for x in seat:
+        print(x, end='  ')
+    print('\n-----------------------------')
     no = int(input('예매 좌석번호 선택(종료 -1)>> '))
     if no == -1:
         break
