@@ -1,4 +1,4 @@
-function패키지내에 exam패키지내에
+function.exam 패키지내에
 tour.py를 만들어서 spring(), summer()함수 정의
 -----------------
 호출은 move.py에서!
