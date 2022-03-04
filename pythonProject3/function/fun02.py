@@ -6,6 +6,7 @@ def call1():
     print('또 나를 불렀군요.')
     return 'ok'
 
-call1()
-call1()
-call1()
+if __name__ == '__main__':
+    call1()
+    call1()
+    call1()
