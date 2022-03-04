@@ -29,5 +29,5 @@ def generate_tag(image_url):
 
 if __name__ == "__main__":
     # img_url = 'http://t1.daumcdn.net/alvolo/_vision/openapi/r2/images/08.jpg'
-    img_url = 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAyMTFfMTM3%2FMDAxNjQ0NTQxMzUzMzEy.ihz9DF1aDBi7OvqsxMWjTvwAfD5sgymT2d0kT9BKFzUg.U70Z8i2BTJeHBjz5n4wXNEadE8Z0hkrnDLny718ybyYg.JPEG.ameliepink%2FIMG_9694.jpg&type=sc960_832'
+    img_url = 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MDNfMTQw%2FMDAxNTg1ODkxMTQ2MDgy.hoKh1KMCtQx6dJpFbiLK1hPi3gJQPiY_Sgkouv9Kgvsg.fIjAD0IBrHV57aLG1pkVBnGpLGC-PvvKL3Wwvm3ytvAg.JPEG.saaaa03%2FKakaoTalk_20200403_111252817.jpg&type=sc960_832'
     generate_tag(img_url)
