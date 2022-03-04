@@ -1003,3 +1003,9 @@ member = [
 
 print(type(member))
 print(len(member))
+
+# id가 500번인 사람의 first_name
+# id가 100번인 사람의 email
+# gender의 종류, 개수
+# id가 31~40인 gender 목록
+
