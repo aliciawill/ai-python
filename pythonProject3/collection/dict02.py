@@ -1033,6 +1033,7 @@ gender_list = list()
 for dic in member3141:
     gender_list.append(dic['gender'])
 print(gender_list)
+
 ### 리스트는 합, 교집합의 개념이 없음.
 # l1 = [1,2,3,4,5]
 # l2 = [2,3,4,6,7]
