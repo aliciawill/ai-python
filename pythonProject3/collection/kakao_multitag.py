@@ -1,5 +1,5 @@
 import sys
-import requests
+import requests #alt+enter
 
 API_URL = 'https://dapi.kakao.com/v2/vision/multitag/generate'
 MYAPP_KEY = 'b9ca7e6fcb8da3719636ca6542de8a8a'
@@ -24,8 +24,10 @@ def generate_tag(image_url):
 
     except Exception as e:
         print(str(e))
-        sys.exit(0)
+        sys.exit(0) #프로그램 완전 종료!
+        #break -> 반복문을 종료시킨 후, 반복문 아래에 있는 코드를 순서대로 계속 실행
 
 if __name__ == "__main__":
-    img_url = 'http://t1.daumcdn.net/alvolo/_vision/openapi/r2/images/08.jpg'
+    # img_url = 'http://t1.daumcdn.net/alvolo/_vision/openapi/r2/images/08.jpg'
+    img_url = 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAyMTFfMTM3%2FMDAxNjQ0NTQxMzUzMzEy.ihz9DF1aDBi7OvqsxMWjTvwAfD5sgymT2d0kT9BKFzUg.U70Z8i2BTJeHBjz5n4wXNEadE8Z0hkrnDLny718ybyYg.JPEG.ameliepink%2FIMG_9694.jpg&type=sc960_832'
     generate_tag(img_url)
