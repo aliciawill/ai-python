@@ -1,0 +1,24 @@
+자바의 컬렉션
+----------
+- 순서 : List, ArrayList
+- 중복x : Set, HashSet
+- FIFO : First Input First Output(선입선출)
+         대기줄(queue, 큐), LinkedList
+         최근본목록
+- FILO : 선입후출
+         Stack, 메서드 실행 영역 할당/해제
+- 키+값 : Map, HashMap
+
+파이썬의 컬렉션
+-----------
+- list() : 순서 중요, [ ]
+- set() : 중복x, { }
+- tuple() : 순서, 읽기 전용, ( )
+- dict() : 키+값, { }, dictionary구조, 사전
+
+
+
+
+
+
+
