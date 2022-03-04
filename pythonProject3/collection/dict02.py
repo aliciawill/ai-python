@@ -1005,7 +1005,38 @@ print(type(member))
 print(len(member))
 
 # id가 500번인 사람의 first_name
+id500 = member[499] #dict
+print(id500)
+id500_email = id500['email']
+print(id500_email)
+
 # id가 100번인 사람의 email
-# gender의 종류, 개수
+id99 = member[99] #dict
+print(id99)
+id99_email = id99['email']
+print(id99_email)
+
+# gender 값의 종류, 개수
+#[{'gender':'Female'},{},{}]
+gender_set = set()
+for x in member:
+    #print(x) #딕셔너리
+    #print(x['gender'])
+    gender_set.add(x['gender'])
+print(gender_set)
+print(len(gender_set))
+
 # id가 31~40인 gender 목록
+member3141 = member[30:40]
+print(member3141)
+gender_list = list()
+for dic in member3141:
+    gender_list.append(dic['gender'])
+print(gender_list)
+### 리스트는 합, 교집합의 개념이 없음.
+# l1 = [1,2,3,4,5]
+# l2 = [2,3,4,6,7]
+# print(l1 + l2)
+
+
 
