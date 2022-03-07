@@ -43,7 +43,7 @@ b0 = Button(w,
             text='0',
             font=('궁서', 30),
             bg='yellow',
-            command=partial(num, 0)
+            command=partial(num, 0) #alt+eter, cmd+1
             )
 b0.grid(row=6, column=2, padx=10, pady=10)
 
