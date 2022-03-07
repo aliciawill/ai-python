@@ -5,7 +5,13 @@ from tkinter import messagebox
 def login():
     messagebox.showinfo('제목','나를 클릭!!')
     # 입력값가지고오고, 일치하는지 확인
-
+    id2 = id_entry.get()
+    pw2 = pw_entry.get()
+    print('id는 ', id2, ' pw는 ', pw2)
+    if id2 == 'root' and pw2 == '1234':
+        messagebox.showinfo('제목', '로그인 성공!!')
+    else:
+        messagebox.showinfo('제목', '로그인 실패!!')
 w = Tk()
 w.geometry("500x250")
 # 라벨을 하나 만들어보자.
