@@ -19,15 +19,24 @@ def login():
     #원래의 id/pw와 입력한 id/pw가 동일한지 판별하여 프린트
     if id2 == 'root' and pw2 == '1234':
         messagebox.showinfo('로그인 성공', '축하합니다.')
+        result.config(text='로그인 성공@@')
         print('로그인 성공')
     else:
         messagebox.showinfo('로그인 실패', '다시해보세요..')
+        result.config(text='로그인 실패@@')
         print('로그인 실패')
 
-w = Tk()
-w.geometry("500x250")
+def reset():
+    id_entry.delete(0,END) #entry값 지움.
+    pw_entry.delete(0,END)
+    pw_entry.insert(0,'다시 입력') #entry에 값 넣음.
+    result.config(text='') #값 텍스트 지움.
 
-id = Label(w, text='ID입력', font=('궁서', 30)) #id글자
+
+w = Tk()
+w.geometry("500x350")
+
+id = Label(w, text='ID입력', font=('궁서', 30))
 id.pack()
 
 id_entry = Entry(w, font=('궁서', 30), bg='blue', fg='white') #id입력
@@ -35,6 +44,7 @@ id_entry.pack()
 
 pw = Label(w, text='PW입력' , font=('궁서', 30)) #pw글자
 pw.pack()
+
 
 pw_entry = Entry(w, font=('궁서', 30), bg='blue', fg='white') #pw입력
 pw_entry.pack()
@@ -46,7 +56,15 @@ b = Button(w,
            command=login
            ) #클릭버튼
 b.pack()
+b2 = Button(w,
+           text='리셋',
+           font=('궁서', 30),
+           bg='yellow',
+           command=reset
+           ) #클릭버튼
+b2.pack()
 
-
+result = Label(w, text='결과는 여기에', font=('궁서', 30))
+result.pack()
 
 w.mainloop()
