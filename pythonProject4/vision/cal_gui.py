@@ -1,10 +1,14 @@
 from functools import partial
 from tkinter import *
+from tkinter import messagebox
+
+from vision.cal import Cal
 
 pre_num = '' # '12'
 oper = '' # '+'
 post_num = '' #'10'
 pre_post = True
+cal = Cal()
 
 def num(n):
     global pre_num, post_num
@@ -22,8 +26,10 @@ def equal():
     int_pre = int(pre_num)
     int_post = int(post_num)
     if oper == '+':
-        result = int_pre + int_post
-        print(result)
+        # result = int_pre + int_post
+        result = cal.plus(int_pre, int_post)
+        # print(result)
+        messagebox.showinfo('결과', '결과값 >> ' + str(result))
     elif oper == '-':
         pass
     # else:
@@ -167,5 +173,6 @@ clear = Button(w,
                )
 
 clear.grid(row=6, column=1, padx=10, pady=10)
+
 
 w.mainloop()
