@@ -15,6 +15,7 @@ class Day:
         # 몇 개의 객체가 생성되었는지 누적!
         # self.count = self.count + 1
         Day.count += 1 #클래스 변수
+        Day.time += time
 
 
     def study(self):
