@@ -1,7 +1,8 @@
+import tkinter
 from tkinter import *
 from tkinter import messagebox
-#import tkinter
-
+import tkinter
+from PIL import Image, ImageTk
 #버튼을 눌렀을 때 로그인 기능을 처리해야함.
 #특정한 기능은 하나의 함수로 만들어 주면 됨.
 #버튼 눌렀을 때 처리하고자 하는 기능하나는 함수하나가 됨.
@@ -21,10 +22,16 @@ def login():
         messagebox.showinfo('로그인 성공', '축하합니다.')
         result.config(text='로그인 성공@@')
         print('로그인 성공')
+        img2 = tkinter.PhotoImage(file='a2.png')
+        result2.configure(image=img2)
+        result2.image=img2
     else:
         messagebox.showinfo('로그인 실패', '다시해보세요..')
         result.config(text='로그인 실패@@')
         print('로그인 실패')
+        img3 = tkinter.PhotoImage(file='a.png')
+        result2.configure(image=img3)
+        result2.image = img3
 
 def reset():
     id_entry.delete(0,END) #entry값 지움.
@@ -34,7 +41,7 @@ def reset():
 
 
 w = Tk()
-w.geometry("500x350")
+w.geometry("500x900")
 
 id = Label(w, text='ID입력', font=('궁서', 30))
 id.pack()
@@ -66,5 +73,9 @@ b2.pack()
 
 result = Label(w, text='결과는 여기에', font=('궁서', 30))
 result.pack()
+
+img = tkinter.PhotoImage(file='r5.png')
+result2 = Label(w, image=img)
+result2.pack()
 
 w.mainloop()
