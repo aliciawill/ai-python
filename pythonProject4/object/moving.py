@@ -4,6 +4,11 @@ class Bike:
     location = ''
     person = 0
 
+    def __init__(self, speed, person, location) :
+        self.speed = speed
+        self.person = person
+        self.location = location
+
     #멤버함수 3개
     def start(self):
         print('start!')
