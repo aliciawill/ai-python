@@ -23,6 +23,9 @@ def num(n):
 def equal():
     #뒤에값 가져다가 정수로 변환
     #계산하고, 결과값 프린트
+    global pre_num, post_num, pre_post
+    print('pre >> ', pre_num)
+    print('post >> ', post_num)
     int_pre = int(pre_num)
     int_post = int(post_num)
     if oper == '+':
@@ -30,6 +33,9 @@ def equal():
         result = cal.plus(int_pre, int_post)
         # print(result)
         messagebox.showinfo('결과', '결과값 >> ' + str(result))
+        pre_num = ''
+        post_num = ''
+        pre_post = True
     elif oper == '-':
         pass
     # else:
