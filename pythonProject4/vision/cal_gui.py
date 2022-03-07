@@ -67,7 +67,7 @@ b3 = Button(w,
             text='3',
             font=('궁서', 30),
             bg='yellow',
-            command=num
+            command=partial(num, 3)
             )
 b3.grid(row=3, column=3, padx=10, pady=10)
 
@@ -75,7 +75,7 @@ b4 = Button(w,
             text='4',
             font=('궁서', 30),
             bg='yellow',
-            command=num
+            command=partial(num, 4)
             )
 b4.grid(row=4, column=1, padx=10, pady=10)
 
@@ -83,7 +83,7 @@ b5 = Button(w,
             text='5',
             font=('궁서', 30),
             bg='yellow',
-            command=num
+            command=partial(num, 5)
             )
 b5.grid(row=4, column=2, padx=10, pady=10)
 
@@ -91,7 +91,7 @@ b6 = Button(w,
             text='6',
             font=('궁서', 30),
             bg='yellow',
-            command=num
+            command=partial(num, 6)
             )
 b6.grid(row=4, column=3, padx=10, pady=10)
 
@@ -99,7 +99,7 @@ b7 = Button(w,
             text='7',
             font=('궁서', 30),
             bg='yellow',
-            command=num
+            command=partial(num, 7)
             )
 b7.grid(row=5, column=1, padx=10, pady=10)
 
@@ -107,7 +107,7 @@ b8 = Button(w,
             text='8',
             font=('궁서', 30),
             bg='yellow',
-            command=num
+            command=partial(num, 8)
             )
 b8.grid(row=5, column=2, padx=10, pady=10)
 
@@ -115,7 +115,7 @@ b9 = Button(w,
             text='9',
             font=('궁서', 30),
             bg='yellow',
-            command=num
+            command=partial(num, 9)
             )
 b9.grid(row=5, column=3, padx=10, pady=10)
 
