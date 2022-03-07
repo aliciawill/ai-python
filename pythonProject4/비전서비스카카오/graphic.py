@@ -47,4 +47,5 @@ b = Button(w,
            ) #클릭버튼
 b.pack()
 
+
 w.mainloop()
