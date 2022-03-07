@@ -6,7 +6,6 @@ def login():
     messagebox.showinfo('제목','나를 클릭!!')
     # 입력값가지고오고, 일치하는지 확인
 
-
 w = Tk()
 w.geometry("500x250")
 # 라벨을 하나 만들어보자.
