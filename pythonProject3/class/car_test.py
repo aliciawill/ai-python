@@ -4,7 +4,7 @@ class Car:
     speed = 0
 
     #self == this(java)
-    #해당 class, Car
+    #해당 object, Car
 
     def start(self):
         print('차가 출발하다.')
