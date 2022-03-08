@@ -7,6 +7,7 @@
 ## park     150         019
 ## song     200         017
 
+
 file = open('member.txt', 'a')
 
 for _ in range(2):
