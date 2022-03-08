@@ -12,16 +12,16 @@
 # print(one) #['hong', '90', '011']
 
 try:
-    file = open('member.txt', 'w')
-
-    for _ in range(3):
-        name = input('당신의 이름은 >> ')
-        age = input('당신의 나이는 >> ')
-        tel = input('당신의 연락처는 >> ')
-        data = name + "," + age + "," + tel + '\n'
-        one = data.split(',')
-        file.write(data)
-        print('--------------')
+    file = open('member.txt', 'r')
+    lines = file.readlines() #['','','']
+    print('이름     나이     연락처')
+    print('-----------------------')
+    for line in lines:
+        one = line.split(',')
+        print(one[0].strip() + '     ' +
+              one[1].strip() + '     ' +
+              one[2].strip()
+              )
 except:
     print('파일 입출력 에러!!')
 finally:
