@@ -1,0 +1,13 @@
+Phone class
+    text() : 문자를 보내다.
+    call() : 전화통화하다.
+
+SamsungPhone class ---> Phone상속
+    name 인스턴스 변수 추가
+    game() : hong과 게임하다.
+    internet(time) : 3시간 인터넷하다.
+
+ApplePhone class ---> Phone상속
+    size 인스턴스 변수 추가
+    picture() : 사진을 찍다.
+    youtube(time, subject) : 2시간동안 스포츠라는 주제로 유튜브하다.

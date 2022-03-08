@@ -16,4 +16,12 @@ class Animal:
     def move(self):
         print('move!!')
     def speak(self):
-        pass
+        print('speak')
+
+class Dog(Animal): #class Dog extends Animal
+    def speak(self): #재사용(상속)
+        print('멍멍') #재정의(override)
+
+class Duck(Animal):
+    def speak(self): #재사용(상속)
+        print('꽥꽥')
