@@ -22,5 +22,5 @@ class ApplePhone(Phone):
     def picture(self):
         print('사진을 찍다.')
 
-    def youtube(self, time, subject):
+    def youtube(self, time, subject = '스포츠'):
         print(str(time) + '시간동안 ' + subject + '라는 주제로 유튜브하다.')
