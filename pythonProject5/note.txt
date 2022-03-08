@@ -44,6 +44,27 @@ finally: #옵션
 2) 네트워크 연결
 3) db연결
 
+network:
+
+client
+--------
+210.125.33.57:88009
+210.125.33.56:8899/mysite/index.jsp
+www.naver.com/mysite/index.jsp
+범위이름(domain name)
+domain name--> ip로 변환
+
+server
+-------
+210.125.33.56:8899/mysite/index.jsp
+www.naver.com/mysite/index.jsp
+================================
+ip
+210.125.33.56
+
+mysql   ip + port(3306)
+oracle  ip + port(5512)
+tomcat  ip + port(8899)
 
 
 
