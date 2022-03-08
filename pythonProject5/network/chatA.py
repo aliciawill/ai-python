@@ -13,4 +13,7 @@ print('------------A----------------')
 while True:
     #a가 b에 보내는 부분
     data = input('간단 채팅A>> ')
-    sock1.sendto(data, ('127.0.0.1', 3000))
+    sock1.sendto(data.encode('utf-8'), ('127.0.0.1', 3000))
+
+    data, addr = sock2.recvfrom(1024)
+    print('간단 채팅B>> ', data.decode('utf-8'))
