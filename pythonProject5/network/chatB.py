@@ -10,6 +10,7 @@ sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock2.bind(('127.0.0.1', 3000))
 print('127.0.0.1, 3000 port node start!')
 print('------------B----------------')
+
 while True:
     # pass
     #b가 a에게 받는 부분

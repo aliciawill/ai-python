@@ -10,6 +10,8 @@ sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock2.bind(('127.0.0.1', 4000))
 print('127.0.0.1, 4000 port node start!')
 print('------------A----------------')
+
+
 while True:
     #a가 b에 보내는 부분
     data = input('간단 채팅A>> ')
