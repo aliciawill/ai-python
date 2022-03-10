@@ -21,10 +21,18 @@ if __name__ == '__main__':
         # img = input('img입력>> ')
         # vo = (id, name, url, img)
         # create(id, name, url, img)
+        print(vo)
         create(vo)
     elif choice == '2':
-        pass  # id가 1이면, name은 naver2로 변경
+        #pass  # id가 1이면, name은 naver2로 변경
+        id = input('id입력>> ')
+        name = input('name입력>> ')
+        vo = (name, id)
+        print(vo)
+        update(vo)
     elif choice == '3':
-        pass  # id가 1이면 삭제
+        vo = input('id>> ')
+        print(vo)
+        delete(vo)
     else:
         sys.exit(0)  # 프로그램 종료!
