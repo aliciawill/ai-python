@@ -14,11 +14,12 @@ if __name__ == '__main__':
     choice = input('cud중 선택1)c, 2)u, 3)d>> ')
     # 모든 입력은 string! "1"
     if choice == '1':
-        id = input('id입력>> ')
-        name = input('name입력>> ')
-        url = input('url입력>> ')
-        img = input('img입력>> ')
-        vo = (id, name, url, img)
+        vo = input('id,name,url,img>> ').split(',')
+        # id = input('id입력>> ')
+        # name = input('name입력>> ')
+        # url = input('url입력>> ')
+        # img = input('img입력>> ')
+        # vo = (id, name, url, img)
         # create(id, name, url, img)
         create(vo)
     elif choice == '2':
