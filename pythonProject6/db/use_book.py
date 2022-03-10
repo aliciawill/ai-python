@@ -4,6 +4,7 @@
 # --> 모듈명.함수(), 모듈명.클래스명()
 
 import sys
+from tkinter import messagebox
 
 from db.dao import *
 
@@ -11,7 +12,7 @@ from db.dao import *
 # --> 함수()
 
 if __name__ == '__main__':
-    choice = input('cud중 선택1)c, 2)u, 3)d>> ')
+    choice = input('cud중 선택1)c, 2)u, 3)d, 4)r(one)>> ')
     # 모든 입력은 string! "1"
     if choice == '1':
         vo = input('id,name,url,img>> ').split(',')
@@ -34,5 +35,14 @@ if __name__ == '__main__':
         vo = input('id>> ')
         print(vo)
         delete(vo)
+    elif choice == '4':
+        id = input('id>> ')
+        print('id: ', id)
+        row = read(id) #id를 주면서 검색해와라!
+        messagebox.showinfo('결과', '검색결과는 ' + row[0] + ', ' +
+                                        row[1] + ', ' +
+                                        row[2] + ', ' +
+                                        row[3]
+                            )
     else:
         sys.exit(0)  # 프로그램 종료!
