@@ -21,6 +21,10 @@ def save():
     # 4) return값이 1이면, 성공!, 아니면 실패!
     if result == 1:
         messagebox.showinfo('결과', 'db에 저장 성공@@')
+        id_entry.delete(0, END)
+        name_entry.delete(0, END)
+        url_entry.delete(0, END)
+        img_entry.delete(0, END)
     else:
         messagebox.showinfo('결과', 'db에 저장 실패@@')
 
