@@ -12,7 +12,7 @@ from db.dao import *
 # --> 함수()
 
 if __name__ == '__main__':
-    choice = input('cud중 선택1)c, 2)u, 3)d, 4)r(one)>> ')
+    choice = input('cud중 선택1)c, 2)u, 3)d, 4)r(one), 5)r(all)>> ')
     # 모든 입력은 string! "1"
     if choice == '1':
         vo = input('id,name,url,img>> ').split(',')
@@ -44,5 +44,12 @@ if __name__ == '__main__':
                                         row[2] + ', ' +
                                         row[3]
                             )
+    elif choice == '5':
+        all = all() #((),(),(),....)
+        ## 출력해주세요@@@
+        print('id     name     url                  img')
+        print('----------------------------------------')
+        for one in all:
+            print('%s     %s     %s        %s' % one)
     else:
         sys.exit(0)  # 프로그램 종료!
