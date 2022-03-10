@@ -6,7 +6,7 @@
 import sys
 from tkinter import messagebox
 
-from db.dao import *
+from db.dao_func import *
 
 # from 패키지명.모듈명 import 함수명, 클래스명, *
 # --> 함수()
@@ -50,6 +50,6 @@ if __name__ == '__main__':
         print('id     name     url                  img')
         print('----------------------------------------')
         for one in all:
-            print('%s     %s     %s        %s' % one)
+            print('%s     %s     %s   %s' % one)
     else:
         sys.exit(0)  # 프로그램 종료!
