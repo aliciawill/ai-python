@@ -28,7 +28,6 @@ def save():
     else:
         messagebox.showinfo('결과', 'db에 저장 실패@@')
 
-
 def read():
     # id에 입력을 먼저 한 후,
     # 버튼을 누르면 해당 id의 정보를 db에서 검색해온다.
