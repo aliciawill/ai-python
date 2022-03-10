@@ -47,7 +47,7 @@ class DAO:
 
             self.conn.commit()  # insert한 것 반영해줘!
             self.conn.close()
-
+            return result
 
 
     def read(self, id):
