@@ -14,6 +14,7 @@ class RacingCar:
         #self == c1
         #c1.name = 'appleCar'
         self.name = name
+
     #멤버함수
     def runCar(self, label, x1, y1):
 
@@ -21,9 +22,9 @@ class RacingCar:
             jump = random.randint(1,10)
             print(jump)
             x1 = x1 + jump
-            if x1 == 200:
+            if x1 >= 500:
                 break
-            label.place(x = x1 + jump, y = y1)
+            label.place(x = x1 , y = y1)
             time.sleep(0.1)
 
 def run_start():
