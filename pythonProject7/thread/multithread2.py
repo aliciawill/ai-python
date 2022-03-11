@@ -4,7 +4,6 @@ import time
 class RacingCar:
     #멤버변수
     name = ''
-
     #초기화함수
     def __init__(self, name):
         #self: 클래스로 생성한 객체!
