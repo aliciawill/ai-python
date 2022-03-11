@@ -2,10 +2,13 @@ import random
 import threading
 import time
 from tkinter import *
+from tkinter import messagebox
+
 
 class RacingCar:
     #멤버변수
     name = ''
+    counter = 0 #클래스 변수
 
     #초기화함수
     def __init__(self, name):
@@ -21,7 +24,11 @@ class RacingCar:
             jump = random.randint(1,10)
             print(jump)
             x1 = x1 + jump
-            if x1 >= 400:
+            if x1 >= 500:
+                RacingCar.counter += 1
+                messagebox.showinfo('결과>> ',
+                                    str(RacingCar.counter) + ': ' +
+                                    self.name)
                 break
             label.place(x = x1 + jump, y = y1)
             time.sleep(0.05)
