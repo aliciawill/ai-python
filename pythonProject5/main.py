@@ -5,7 +5,7 @@
 
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug_test your script.
+    # Use a breakpoint in the code line below to debug_프로젝트를하나만만들어야함 your script.
     print(f'Hi, {name}')  # Press ⇧⌘B to toggle the breakpoint.
 
 
