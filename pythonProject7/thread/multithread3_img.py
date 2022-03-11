@@ -21,10 +21,10 @@ class RacingCar:
             jump = random.randint(1,10)
             print(jump)
             x1 = x1 + jump
-            if x1 == 200:
+            if x1 >= 400:
                 break
             label.place(x = x1 + jump, y = y1)
-            time.sleep(0.1)
+            time.sleep(0.05)
 
 def run_start():
     # 라벨 객체 만들어서 window에 끼워넣어야 함.
