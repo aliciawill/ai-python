@@ -14,6 +14,7 @@ def click(x, y):
     color_choice = random.choice(color_list)
     my_turtle.pensize(pen_size)
     my_turtle.pencolor(color_choice)
+
     # my_turtle.penup() #이동만!
     # my_turtle.goto(x, y)
     # my_turtle.pendown()
