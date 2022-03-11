@@ -4,9 +4,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="pythonProject4" />
-    <orderEntry type="module" module-name="pythonProject3" />
-    <orderEntry type="module" module-name="pythonProject6" />
-    <orderEntry type="module" module-name="pythonProject7" />
   </component>
 </module>
