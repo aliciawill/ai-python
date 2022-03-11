@@ -42,5 +42,17 @@ if __name__ == '__main__':
     # from collections import Counter
     count_result = Counter(result_list)
     print(count_result)
+    # Counter({'사람': 3, '여러사람': 3, '여성': 3, '남성': 3, '바지': 3, '안경': 1, '스포츠': 1, '실외': 1, '모자': 1})
     print(count_result.get('안경'))
+    # 1
+    print(count_result.most_common(1))
+    # [('사람', 3)]
     print(count_result.most_common(5))
+    # [('사람', 3), ('여러사람', 3), ('여성', 3), ('남성', 3), ('바지', 3)]
+    order_5 = count_result.most_common(5)
+    print(order_5[0]) #('사람', 3)
+    order_1 = order_5[0]
+    print('제일 빈도수가 높은 단어는 ', order_1[0],
+          '이고, 빈도수는 ', order_1[1]
+          )
+    # 제일 빈도수가 높은 단어는 사람 이고, 빈도수는 3
