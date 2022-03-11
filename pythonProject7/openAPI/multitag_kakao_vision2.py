@@ -1,6 +1,7 @@
 import sys
 import argparse
 from collections import Counter
+from tkinter import messagebox
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
@@ -56,3 +57,14 @@ if __name__ == '__main__':
           '이고, 빈도수는 ', order_1[1]
           )
     # 제일 빈도수가 높은 단어는 사람 이고, 빈도수는 3
+
+    tour = ''
+    if order_1[0] == '사람':
+        tour = '제주도'
+    elif order_1[0] == '남성':
+        tour = '등산'
+    else:
+        tour = '놀이공원'
+    messagebox.showinfo('추천', '당신에게 ' +
+                        tour +
+                        '를 추천합니다.' )
