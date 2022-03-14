@@ -46,8 +46,13 @@ def run_start():
 
     thread_list = []
     y_value = 100
+
     for i in range(0, len(car_list)):
-        thread_list.append(threading.Thread(target=car_list[i].runCar, args=(car_label_list[i], 10, y_value + 50)))
+        y_value = y_value + 50
+        thread_list.append(threading.Thread(target=car_list[i].runCar,
+                                            args=(car_label_list[i],
+                                                  10, y_value
+                                                  )))
 
     for thread_one in thread_list:
         thread_one.start()
@@ -64,10 +69,10 @@ if __name__ == '__main__':
     car_label_list = []
     car_img = ['car1.gif', 'car2.gif', 'car3.gif']
 
-    for _ in range(9):
+    for i in range(9):
         y_value = y_value + 50
-        img = PhotoImage(file=random.choice(car_img))
-        car_label = Label(window, image=img)
+        # img = PhotoImage(file=random.choice(car_img))
+        car_label = Label(window, text= "Car" + str(i))
         car_label_list.append(car_label)
         car_label.place(x=10, y=y_value)
         print(len(car_label_list))
