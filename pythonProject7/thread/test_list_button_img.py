@@ -1,8 +1,13 @@
+import base64
+import io
+import os
 import random
+import ssl
 import threading
 import time
 from tkinter import *
 from tkinter import messagebox
+from PIL import ImageTk, Image
 
 
 class RacingCar:
@@ -65,8 +70,26 @@ if __name__ == '__main__':
     y_value = 100
     for i in range(9):
         y_value = y_value + 50
+
         # car_label = Button(window, text='button' + str(i))
-        img = PhotoImage(file='car1.gif')
+        image_url = "https://item.kakaocdn.net/do/a55eb47ef16882d3ee4ff9cd9bb873579f17e489affba0627eb1eb39695f93dd"
+
+        from PIL import Image
+
+        name = 'test6.png'
+        # curl 요청
+        os.system("curl " + image_url + " > " + name)
+
+        # img = PhotoImage(file='car1.gif')
+        path_dir = '/Users/administrator/Documents/python_project/pythonProject7/thread'
+
+        file_list = os.listdir(path_dir)
+        for x in file_list:
+            if x == name:
+                print(x)
+        print('--------' , name)
+
+        img = PhotoImage(file=name)
         car_label = Button(window, image=img)
         # car_label = Label(window, image=img)
         car_label.image = img

@@ -1,14 +1,9 @@
-import sys
-import argparse
-from collections import Counter
-from tkinter import messagebox
+
 
 import requests
-from PIL import Image, ImageDraw, ImageFont
-from io import BytesIO
+from PIL import Image
 
 API_URL = 'https://dapi.kakao.com/v2/vision/multitag/generate'
-# API_URL = 'https://dapi.kakao.com/v2/vision/face/detect'
 MYAPP_KEY = 'b9ca7e6fcb8da3719636ca6542de8a8a'
 
 def multi_tag(img):
@@ -21,7 +16,6 @@ def multi_tag(img):
 
     json_result = response.json()
     print(json_result)
-
 
 if __name__ == '__main__':
     label_result = multi_tag('alone.png')
