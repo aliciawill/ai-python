@@ -56,7 +56,7 @@ def run_start():
 
 if __name__ == '__main__':
     window = Tk()
-    window.geometry("500x550")
+    window.geometry("500x600")
     window.title('멀티 gui test')
     b = Button(window, text='멀티 스레드 시작',
                command=run_start)

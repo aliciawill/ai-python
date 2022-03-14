@@ -58,7 +58,7 @@ def run_start():
 
 if __name__ == '__main__':
     window = Tk()
-    window.geometry("500x550")
+    window.geometry("500x600")
     window.title('멀티 스레드 자동차 경주')
     b = Button(window, text='멀티 스레드 시작',
                command=run_start)
@@ -69,12 +69,11 @@ if __name__ == '__main__':
 
     for _ in range(9):
         img = PhotoImage(file=random.choice(car_img))
-        car_label_list.append(Label(window, image=img))
+        car_label = Label(window, image=img)
+        car_label.image = img
+        car_label_list.append(car_label)
         print(len(car_label_list))
-
-    for car_label in car_label_list:
         y_value = y_value + 50
-        print(car_label)
         car_label.place(x=10, y=y_value)
 
     window.mainloop()
