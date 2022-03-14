@@ -30,9 +30,9 @@ class RacingCar:
             x1 = x1 + jump
             if x1 >= 500:
                 RacingCar.counter += 1
-                messagebox.showinfo('결과>> ',
-                                    str(RacingCar.counter) + ': ' +
-                                    self.name)
+                #messagebox.showinfo('결과>> ',
+                                    # str(RacingCar.counter) + ': ' +
+                                    # self.name)
                 break
             label.place(x=x1 + jump, y=y1)
             time.sleep(0.05)
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
         from PIL import Image
 
-        name = 'test6.png'
+        name = 'test7.png'
         # curl 요청
         os.system("curl " + image_url + " > " + name)
 
@@ -90,8 +90,9 @@ if __name__ == '__main__':
         print('--------' , name)
 
         img = PhotoImage(file=name)
-        car_label = Button(window, image=img, width=100, height=100)
+        car_label = Button(window, image=img, width=200, height=200)
         # car_label = Label(window, image=img)
+        # 이미지가 너무 크면 tkinter에는 안들어가요!(jpg < png)
         car_label.image = img
         print(len(car_label_list))
         car_label_list.append(car_label)

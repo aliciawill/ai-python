@@ -70,3 +70,9 @@ if __name__ == '__main__':
     messagebox.showinfo('추천', '당신에게 ' +
                         tour +
                         '를 추천합니다.' )
+
+    #result.txt
+    #사람,제주도
+
+
+

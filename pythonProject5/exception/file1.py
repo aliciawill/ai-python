@@ -13,13 +13,14 @@
 
 try:
     file = open('member.txt', 'w')
-
+    #file = open('member.txt', 'a')
     for _ in range(3):
         name = input('당신의 이름은 >> ')
         age = input('당신의 나이는 >> ')
         tel = input('당신의 연락처는 >> ')
         data = name + "," + age + "," + tel + '\n'
         one = data.split(',')
+        # data = '아이들' + ',' + '놀이동산'
         file.write(data)
         print('--------------')
 except:
