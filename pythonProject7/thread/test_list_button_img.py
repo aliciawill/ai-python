@@ -90,7 +90,7 @@ if __name__ == '__main__':
         print('--------' , name)
 
         img = PhotoImage(file=name)
-        car_label = Button(window, image=img)
+        car_label = Button(window, image=img, width=100, height=100)
         # car_label = Label(window, image=img)
         car_label.image = img
         print(len(car_label_list))
