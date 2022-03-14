@@ -24,12 +24,6 @@ def multi_tag(img):
 
 
 if __name__ == '__main__':
-    # parser = argparse.ArgumentParser(description='..')
-    # parser.add_argument('image_file', type=str, nargs='?', default="alone.png",
-    #                     help='image file ')
-    #
-    # args = parser.parse_args()
-    # label_result = multi_tag(args.image_file)
     label_result = multi_tag('alone.png')
     print(label_result)
 
