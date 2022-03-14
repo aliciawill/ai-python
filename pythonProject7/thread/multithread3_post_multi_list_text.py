@@ -49,11 +49,12 @@ def run_start():
 
     for i in range(0, len(car_list)):
         y_value = y_value + 50
+        #for문에서 생성된 여러개의 값들(주소들)은
+        # list에 모아놓아야 한다.
         thread_list.append(threading.Thread(target=car_list[i].runCar,
                                             args=(car_label_list[i],
                                                   10, y_value
                                                   )))
-
     for thread_one in thread_list:
         thread_one.start()
 

@@ -70,6 +70,8 @@ if __name__ == '__main__':
     for _ in range(9):
         img = PhotoImage(file=random.choice(car_img))
         car_label = Label(window, image=img)
+        #라벨/버튼에 이미지를 넣는 경우,
+        #전역변수인 image안에 img객체를 한번더 넣어주어야 함.
         car_label.image = img
         car_label_list.append(car_label)
         print(len(car_label_list))

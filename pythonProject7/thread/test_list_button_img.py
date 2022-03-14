@@ -67,8 +67,8 @@ if __name__ == '__main__':
         y_value = y_value + 50
         # car_label = Button(window, text='button' + str(i))
         img = PhotoImage(file='car1.gif')
-        # car_label = Button(window, image=img)
-        car_label = Label(window, image=img)
+        car_label = Button(window, image=img)
+        # car_label = Label(window, image=img)
         car_label.image = img
         print(len(car_label_list))
         car_label_list.append(car_label)

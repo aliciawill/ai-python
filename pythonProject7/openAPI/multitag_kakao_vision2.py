@@ -11,7 +11,9 @@ API_URL = 'https://dapi.kakao.com/v2/vision/multitag/generate'
 MYAPP_KEY = 'b9ca7e6fcb8da3719636ca6542de8a8a'
 
 def multi_tag(image_url):
-    header = {'Authorization' : 'KakaoAK %s' % MYAPP_KEY}
+    # files = {'image': open("car1.gif", 'rb')}
+    header = {'Authorization' : 'KakaoAK %s' % MYAPP_KEY
+              }
     img_data = {'image_url' : image_url}
     response = requests.post(API_URL,
                              headers=header,
