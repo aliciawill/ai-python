@@ -11,4 +11,4 @@ class Bbs(models.Model):
         return str(self.no) + ", " + \
                self.title + ", " + \
                self.content + ", " + \
-               self.writer + ", "
+               self.writer
