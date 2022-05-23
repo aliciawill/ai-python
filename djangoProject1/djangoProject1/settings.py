@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'member.apps.MemberConfig',
+    'bbs.apps.BbsConfig'
 ]
 
 MIDDLEWARE = [
