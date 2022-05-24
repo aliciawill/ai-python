@@ -93,7 +93,7 @@ def up2(req):
     ##5. 검색을 해서 확인해보자.
     #return HttpResponse('수정 내용 확인하는 페이지')
     #urls.py에 있는 주소를 호출시에는 redirect를 써준다.
-    return redirect('/member/one2/')
+    return redirect('/member/one22/' + data['id'])
 
 
 
