@@ -66,6 +66,20 @@ def one2(req):
     #     pass
 
 
+def up(req, id):
+    #get(주소와 함께 전달되는 값은 컨트롤러의 함수안에
+    #     같은 이름의 변수를 선언해주면 장고가 받아서 넣어준다.
+    ##검색할 id를 받아와서
+    print('전달받은 검색할 id는 ', id)
+    ##db검색을 한후,
+    one = Test.objects.get(id = id)
+    print('db검색한 결과: ', one)
+    context = {'one' : one}
+    ##db검색한 결과를 context로 전달
+    return render(req, 'member/up.html', context)
+
+def up2(req):
+    pass
 
 
 

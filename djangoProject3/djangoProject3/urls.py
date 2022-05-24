@@ -13,4 +13,6 @@ urlpatterns = [
     path('member/del2', member.views.delete2),
     path('member/one', member.views.one),
     path('member/one2', member.views.one2),
+    path('member/up/<id>', member.views.up),
+    path('member/up2', member.views.up2),
 ]
