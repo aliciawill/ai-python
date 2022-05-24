@@ -15,6 +15,24 @@ def index(req):
 def insert(req):
     return render(req, 'member/insert.html')
 
+def delete(req):
+    return render(req, 'member/delete.html')
+
+def delete2(req):
+    #1. 입력한 정보 받아서
+    data = req.POST
+    print(data)
+    #2. db처리
+    #2-1. 검색을 먼저하고
+    one = Test.objects.get(id = data['id'])
+    #one = Test.objects.filter(id = data['id'])
+    print(one)
+    #2-2. 지워주세요.
+    one.delete()
+
+    #3. 결과 알려줌.
+    return render(req, 'member/delete2.html')
+
 def insert2(req):
     #1. 입력한 정보 받아서
     data = req.POST #dic
