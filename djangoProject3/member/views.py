@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from member.models import Question, Test
 
 # Create your views here.
@@ -79,7 +79,21 @@ def up(req, id):
     return render(req, 'member/up.html', context)
 
 def up2(req):
-    pass
+    ##1. 전달되는 값 post방식으로 받고,
+    data = req.POST
+    ##2. id를 가지고 검색 후,
+    one = Test.objects.get(id = data['id'])
+    print('수정할 데이터 검색: ', one)
+    ##3. update처리함.
+    one.name = data['name']
+    one.tel = data['tel']
+    one.addr = data['addr']
+    one.save()
+    ##4. 결과를 알려줌.
+    ##5. 검색을 해서 확인해보자.
+    #return HttpResponse('수정 내용 확인하는 페이지')
+    #urls.py에 있는 주소를 호출시에는 redirect를 써준다.
+    return redirect('/member/one2/')
 
 
 
