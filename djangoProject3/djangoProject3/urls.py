@@ -13,6 +13,10 @@ urlpatterns = [
     path('member/del2', member.views.delete2),
     path('member/one', member.views.one),
     path('member/one2', member.views.one2),
+    path('member/one22/<id>', member.views.one22),
     path('member/up/<id>', member.views.up),
     path('member/up2', member.views.up2),
+    path('member/all', member.views.all),
+    path('member/login', member.views.login),
+    path('member/login2', member.views.login2),
 ]

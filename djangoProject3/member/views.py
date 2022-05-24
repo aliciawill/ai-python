@@ -65,6 +65,15 @@ def one2(req):
     # def render(request, templte, context):
     #     pass
 
+def one22(req, id):
+    one = Test.objects.get(id = id)
+    print('db검색한 결과: ', one)
+    result = {'one' : one,
+              'test' : 100
+              }
+    #controller에서 template으로 값을 넘길때는
+    #dictionary를 만들어 전달한다.
+    return render(req, 'member/one2.html', context=result)
 
 def up(req, id):
     #get(주소와 함께 전달되는 값은 컨트롤러의 함수안에
@@ -95,7 +104,23 @@ def up2(req):
     #urls.py에 있는 주소를 호출시에는 redirect를 써준다.
     return redirect('/member/one22/' + data['id'])
 
+def all(req):
+    all = Test.objects.all()
+    context = {'all' : all}
+    return render(req, 'member/all.html', context)
 
+def login(req):
+    return render(req, 'member/login.html')
 
-
-
+def login2(req):
+    one = Test.objects.get(id=req.POST['id'])
+    print('db검색한 결과: ', one)
+    if one != None:
+        result = '로그인 성공'
+        req.session['logid'] = req.POST['id']
+    else:
+        result = '로그인 실패'
+    print(result)
+    # controller에서 template으로 값을 넘길때는
+    # dictionary를 만들어 전달한다.
+    return redirect('/member/')

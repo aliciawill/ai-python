@@ -21,11 +21,20 @@
     </style>
 </head>
 <body>
+<h3>로그인 id: {{ request.session.logid }}</h3>
 <h3>회원가입 작성</h3>
 <table border="1">
     <tr>
         <td class="c1">항목</td>
         <td width="200">입력</td>
+    </tr>
+     <tr>
+        <td class="c1">로그인</td>
+        <td width="200">
+            <a href="/member/login">
+                <button>로그인 go!</button>
+            </a>
+        </td>
     </tr>
     <tr>
         <td class="c1">회원가입</td>
@@ -43,14 +52,16 @@
             </a>
         </td>
     </tr>
+    {% if request.session.logid != None %}
     <tr>
         <td class="c1">회원정보수정</td>
         <td width="200">
-            <a href="/member/up">
+            <a href="/member/up/{{ request.session.logid }}">
                 <button>회원정보수정 go!</button>
             </a>
         </td>
     </tr>
+    {% endif %}
     <tr>
         <td class="c1">회원검색(개인)</td>
         <td width="200">
