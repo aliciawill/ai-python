@@ -35,7 +35,7 @@
         <td class="c1">로그인</td>
         <td width="200">
             <a href="/member/login">
-                <button>로그인 go!</button>
+                <button class="btn btn-danger">로그인 go!</button>
             </a>
         </td>
     </tr>
@@ -43,7 +43,10 @@
         <td class="c1">회원가입</td>
         <td width="200">
             <a href="/member/insert">
-                <button>회원가입 go!</button>
+                <button class="btn btn-danger">회원가입 go!</button>
+            </a>
+            <a href="/member/test?a=welcome">
+                <button>서버로 전송@@@</button>
             </a>
         </td>
     </tr>
@@ -51,7 +54,7 @@
         <td class="c1">회원탈퇴</td>
         <td width="200">
             <a href="/member/del">
-                <button>회원탈퇴 go!</button>
+                <button class="btn btn-danger">회원탈퇴 go!</button>
             </a>
         </td>
     </tr>
@@ -60,7 +63,7 @@
         <td class="c1">회원정보수정</td>
         <td width="200">
             <a href="/member/up/{{ request.session.logid }}">
-                <button>회원정보수정 go!</button>
+                <button class="btn btn-danger">회원정보수정 go!</button>
             </a>
         </td>
     </tr>
@@ -69,7 +72,7 @@
         <td class="c1">회원검색(개인)</td>
         <td width="200">
             <a href="/member/one">
-                <button>회원검색(개인) go!</button>
+                <button class="btn btn-danger">회원검색(개인) go!</button>
             </a>
         </td>
     </tr>
@@ -77,8 +80,7 @@
         <td class="c1">회원검색(전체)</td>
         <td width="200">
             <a href="/member/all">
-                <button>회원검색(전체) go!</button>
-            </a>
+                <button class="btn btn-danger">회원검색(전체) go!</button>
         </td>
     </tr>
 </table>

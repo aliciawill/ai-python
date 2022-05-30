@@ -3,10 +3,13 @@ from django.urls import path
 
 import member.views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', member.views.start),
     path('member/', member.views.index),
+    path('member/chart', member.views.chart),
+    path('member/test/', member.views.test),
     path('member/insert', member.views.insert),
     path('member/insert2', member.views.insert2),
     path('member/del', member.views.delete),

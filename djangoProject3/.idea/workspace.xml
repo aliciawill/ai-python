@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c11f9077-42ac-471b-98e1-9d5dc00af864" name="변경" comment="member">
-      <change afterPath="$PROJECT_DIR$/static/img/goosee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aiserver2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/member/chart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/member/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/member/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/member/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/member/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/member/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,7 +97,10 @@
       <workItem from="1653358575196" duration="11477000" />
       <workItem from="1653374962602" duration="46000" />
       <workItem from="1653376313883" duration="2187000" />
-      <workItem from="1653379106809" duration="795000" />
+      <workItem from="1653379106809" duration="1415000" />
+      <workItem from="1653546657733" duration="5529000" />
+      <workItem from="1653637502240" duration="2453000" />
+      <workItem from="1653877315818" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="member">
       <created>1653358220524</created>
@@ -192,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653377416639</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="member">
+      <created>1653381091674</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653381091674</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

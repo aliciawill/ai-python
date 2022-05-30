@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="49.50.167.102" id="18db850f-22cf-4e26-b41e-2afa60c9fe17" port="16022" customName="GPU Server" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="GPU Server" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

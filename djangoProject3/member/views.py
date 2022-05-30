@@ -2,12 +2,24 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from member.models import Question, Test
 
+def chart(req):
+    data = [ 8.94, 10.49, 19.30, 21.45, 8.94 ]
+    context = {
+        'data' : data
+    }
+    return render(req, 'member/chart.html', context)
+
 # Create your views here.
 def start(req):
     return HttpResponse('<center><h3>시작페이지</h3><hr color=red>' +
                         '<a href=/member/>회원정보 사이트</a><br>' +
+                        '<a href=/member/chart>chart 사이트</a><br>' +
                         '<a href=/question/>질문정보 사이트</a></center>'
                         )
+
+def test(req):
+    print(req.GET['a'])
+    return HttpResponse('<center><h3>'+ req.GET['a'] + '</h3>')
 
 def index(req):
     return render(req, 'member/index.html')
