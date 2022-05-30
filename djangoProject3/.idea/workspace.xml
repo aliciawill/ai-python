@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c11f9077-42ac-471b-98e1-9d5dc00af864" name="변경" comment="member" />
+    <list default="true" id="c11f9077-42ac-471b-98e1-9d5dc00af864" name="변경" comment="member">
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangoProject100/.idea/djangoProject100.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject100/.idea/djangoProject100.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangoProject100/djangoProject100/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject100/djangoProject100/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject3/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject9/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +101,7 @@
       <workItem from="1653379106809" duration="1415000" />
       <workItem from="1653546657733" duration="5529000" />
       <workItem from="1653637502240" duration="2453000" />
-      <workItem from="1653877315818" duration="662000" />
+      <workItem from="1653877315818" duration="2133000" />
     </task>
     <task id="LOCAL-00001" summary="member">
       <created>1653358220524</created>

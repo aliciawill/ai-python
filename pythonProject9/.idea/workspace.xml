@@ -1,39 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d51f5fff-80e2-4f46-9b67-bb44ca2ddc0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../pythonProject5/debug_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject5/debug_test/debugger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject5/debug_test/debugging_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/debug_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/debug_test/debugger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/debug_test/debugging_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/openAPI/multitag_kakao_vision.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/thread/multithread3_post_multi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject7/thread/multithread3_post_multi_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/.idea/pythonProject8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/debug_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/debug_test/debugger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/debug_test/debugging_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject8/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/debugger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject3/class/debugger.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject3/class/debugger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject5/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject7/thread/multithread2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject7/thread/multithread2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject7/thread/multithread3_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject7/thread/multithread3_img.py" afterDir="false" />
+    <list default="true" id="d51f5fff-80e2-4f46-9b67-bb44ca2ddc0d" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoProject100/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangoProject100/.idea/djangoProject100.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject100/.idea/djangoProject100.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangoProject100/djangoProject100/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject100/djangoProject100/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangoProject3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../djangoProject3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="26ET4rBPyidBb4XT4EUa2BG34Uo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,15 +37,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="exceleditor.install" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
@@ -85,6 +60,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/debugger.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -106,6 +82,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -129,8 +106,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646987557537</updated>
+      <workItem from="1653898347498" duration="133000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
